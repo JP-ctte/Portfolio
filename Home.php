@@ -1,0 +1,364 @@
+<?php
+// You can add dynamic PHP logic here later
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer + UI/UX Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/project.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/others/service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/PT+Sans?icon.set=Material+Icons&icon.size=24&icon.color=%23e8eaed&query=pt+">
+
+</head>
+
+<body>
+
+    <!------------ Nav/header ----------->
+    <header>
+        <div class="logo">ɿЬ</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <main id="hero" class="hero">
+        <div class="hero-inner">
+            <img src="/assets/Web.png" alt="Name Line 1" class="hero-image" />
+            <img src="/assets/UI.png" alt="Name Line 2" class="hero-image" />
+            <p class="hero-role">WEB DEVELOPER | UI/UX Desinger</p>
+        </div>
+    </main>
+
+
+
+
+
+
+    <!---------- About Page ------------>
+    <main id="about" class="about animate-on-scroll">
+        <!-- Left Side Image -->
+        <div class="about-image animate-on-scroll shadow-animate">
+            <img src="/assets/me.jpg" alt="Profile Image">
+        </div>
+
+        <!-- Right Side Text -->
+        <div class="about-content">
+            <p class="intro animate-on-scroll">I am Jp</p>
+            <h1 class="animate-on-scroll">
+                <span id="typed-text"></span>
+            </h1>
+            <p class="description animate-on-scroll">
+                Passionate UI/UX designer dedicated to crafting <br />
+                exceptional digital experience.<br>
+                With a keen eye for detail and a user-centric approach, I <br />
+                transform ideas into intuitive and visually stunning designs.
+            </p>
+            <div class="buttons animate-on-scroll">
+                <a href="#" class="btn">DOWNLOAD CV</a>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/john.p.caraig.3" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/jp.ctte_/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=johnpaulcaraig325@gmail.com" aria-label="Google"><i class="fab fa-google"></i></a>
+                    <a href="https://web.telegram.org/k/#777000" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!----------service provide-------------->
+
+    <section class="services-section" id="services">
+        <h3 class="subtitle">My Specialization</h3>
+        <h1 class="title">Services <span>| Provide</span></h1>
+
+        <div class="services-container animate-on-scroll">
+
+            <!-- UI/UX Design -->
+            <div class="service-card animate-on-scroll" data-alt-title="Web Based System" data-alt-description="We develop brand strategies that define identity and messaging. From logos to brand voice, we build trust and recognition.">
+                <div class="card-header">
+                    <div class="icon-circle">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h2 class="UIUX">UI/UX Design</h2>
+                </div>
+                <p class="service-description">
+                    We craft user interfaces that are not only visually appealing but also intuitive and user-friendly. Through user research, wireframing, and interactive prototyping, we create seamless experiences that prioritize usability, accessibility, and satisfaction across all devices.
+                </p>
+            </div>
+
+            <!-- Application Design -->
+            <div class="service-card animate-on-scroll" data-alt-title="Prototype Design" data-alt-description="We design efficient online stores optimized for conversion and performance. From product layout to checkout, we make sales seamless.">
+                <div class="card-header">
+                    <div class="icon-circle">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h2 class="Application">Application Design</h2>
+                </div>
+                <p class="service-description">
+                    We design functional and engaging applications tailored to user behavior and business goals. By aligning aesthetics with performance, we deliver cross-platform app designs that ensure smooth navigation, consistent branding, and an exceptional user journey from start to finish.
+                </p>
+            </div>
+
+            <!-- System Design -->
+            <div class="service-card animate-on-scroll" data-alt-title="Cloud Solutions" data-alt-description="We build scalable cloud platforms with fast deployment, secure data handling, and seamless API integrations. Future-ready architecture for your business.">
+                <div class="card-header">
+                    <div class="icon-circle">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h2 class="System">System Design</h2>
+                </div>
+                <p class="service-description">
+                    We architect robust and scalable systems tailored to your business needs. From designing efficient database structures to creating secure server-side logic and seamless integration layers, our system designs ensure high performance, reliability, and future-proof solutions.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+    <!---------- Portfolio Page -------------->
+
+    <main id="portfolio" class="portfolio-section">
+        <div class="portfolio-container">
+            <h1 class="portfolio-title">Portfolio</h1>
+
+            <div class="portfolio-tabs">
+                <button class="tab-btn active" data-tab="projects"><i class="fas fa-folder-open"></i> Project</button>
+                <button class="tab-btn" data-tab="certificates"><i class="fas fa-certificate"></i> Certificate</button>
+                <button class="tab-btn" data-tab="tech"><i class="fas fa-code"></i> Tech Stack</button>
+            </div>
+
+            <hr class="divider-line">
+
+            <div class="tab-content-group">
+                <div class="tab-content" id="projects">
+                    <div class="portfolio-items">
+                        <div class="portfolio-item">
+                            <div class="item-badge">High Quality</div>
+                            <img src="/assets/project/Mrboy.jpg" alt="Certificate Image" class="portfolio-image">
+                            <h3>Web-based POS System</h3>
+                            <p class="item-subtitle">
+                                Project
+                                <a href="https://github.com/johnpewpew/POS---Web-Based-Point-of-Sale-System.git"
+                                    target="_blank" rel="noopener" class="github-link" aria-label="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <span class="lang-container">
+                                    <span class="lang-badge">Php</span>
+                                    <span class="lang-badge">HTML</span>
+                                    <span class="lang-badge">CSS</span>
+                                    <span class="lang-badge">JavaScript</span>
+                                    <span class="lang-badge">MySQL</span>
+                                </span>
+                            </p>
+
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="item-badge">High Quality</div>
+                            <img src="/assets/project/Hotel.png" alt="Certificate Image" class="portfolio-image">
+                            <h3>Web-based Hotel Reservation System</h3>         
+                             <p class="item-subtitle">
+                                Project
+                                <a href="https://github.com/johnpewpew/Web-based-Hotel-Reservation-System2.0"
+                                    target="_blank" rel="noopener" class="github-link" aria-label="GitHub Repository">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <span class="lang-container">
+                                    <span class="lang-badge">Php</span>
+                                    <span class="lang-badge">HTML</span>
+                                    <span class="lang-badge">CSS</span>
+                                    <span class="lang-badge">JavaScript</span>
+                                    <span class="lang-badge">MySQL</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="certificates">
+                    <div class="portfolio-items">
+                        <!-- Certificate Items (with images) -->
+                        <div class="portfolio-item">
+                            <div class="item-badge">High Quality</div>
+                            <img src="/assets/certicate/cisco1.jpg" alt="Certificate Image" class="portfolio-image">
+                            <h3>Introduction to CSS</h3>
+                            <p class="item-subtitle">Certificates</p>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="item-badge">High Quality</div>
+                            <img src="/assets/certicate/cisco2.jpg" alt="Certificate Image" class="portfolio-image">
+                            <h3>Setting Up CS</h3>
+                            <p class="item-subtitle">Certificates</p>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="item-badge">High Quality</div>
+                            <img src="/assets/certicate/cisco3.jpg" alt="Certificate Image" class="portfolio-image">
+                            <h3>MCS and Networks</h3>
+                            <p class="item-subtitle">Certificates</p>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="item-badge">High Quality</div>
+                            <img src="/assets/certicate/cisco4.jpg" alt="Certificate Image" class="portfolio-image">
+                            <h3>Installing and Configuring CS</h3>
+                            <p class="item-subtitle">Certificates</p>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="item-badge">High Quality</div>
+                            <img src="/assets/certicate/cisco5.jpg" alt="Certificate Image" class="portfolio-image">
+                            <h3>Practicing COVID-19 PMW</h3>
+                            <p class="item-subtitle">Certificates</p>
+                        </div>
+                        <div class="portfolio-item">
+                            <div class="item-badge">High Quality</div>
+                            <img src="/assets/certicate/cisco6.jpg" alt="Certificate Image" class="portfolio-image">
+                            <h3>Setting Up CS</h3>
+                            <p class="item-subtitle">Certificates</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="tech">
+                    <div class="portfolio-items">
+                        <div class="category-box">
+                            <div class="category-header">
+                                <!-- Frontend Icon replaced -->
+                                <span class="material-icons-outlined">developer_board</span>
+                                Frontend Development
+                            </div>
+                            <div class="tags">
+                                <div class="tag">HTML</div>
+                                <div class="tag">JavaScript</div>
+                                <div class="tag">React</div>
+                                <div class="tag">CSS</div>
+                            </div>
+                        </div>
+
+                        <div class="category-box">
+                            <div class="category-header">
+                                <!-- Backend Icon -->
+                                <span class="material-icons-outlined">dns</span>
+                                Backend Development
+                            </div>
+                            <div class="tags">
+                                <div class="tag">PHP</div>
+                                <div class="tag">Java</div>
+                                <div class="tag">JavaScript</div>
+                                <div class="tag">C#</div>
+                            </div>
+                        </div>
+
+                        <div class="category-box">
+                            <div class="category-header">
+                                <!-- Database Icon -->
+                                <span class="material-icons-outlined">memory</span>
+                                Database
+                            </div>
+                            <div class="tags">
+                                <div class="tag">MySQL</div>
+                            </div>
+                        </div>
+
+                        <div class="category-box">
+                            <div class="category-header">
+                                <!-- Tools Icon -->
+                                <span class="material-icons-outlined">code</span>
+                                Tools
+                            </div>
+                            <div class="tags">
+                                <div class="tag">VS Code</div>
+                                <div class="tag">Figma</div>
+                                <div class="tag">GitHub</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Image Modal -->
+    <div id="imageModal" class="image-modal">
+        <span class="close-btn">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!---------- Contact Page -------------->
+
+    <section id="contact" class="contact animate-section">
+        <div class="contact-container">
+            <!-- Left Section: Contact Info -->
+            <div class="left-section1 animate-on-scroll">
+                <div class="info-block animate-on-scroll">
+                    <h1 class="label">EMAIL</h1>
+                    <p class="text1">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=johnpaulcaraig325@gmail.com" target="_blank" class="email-link">
+                            johnpaulcaraig325@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+
+                <div class="info-block animate-on-scroll">
+                    <h1 class="label">PHONE</h1>
+                    <p class="text1">09343252345</p>
+                </div>
+
+                <div class="info-block animate-on-scroll">
+                    <h1 class="label">VISIT OUR WEBSITE</h1>
+                    <p class="text1">pearlnest.com</p>
+                </div>
+
+                <div class="social-icons1 animate-on-scroll">
+                    <a href="https://www.facebook.com/john.p.caraig.3" class="social-link" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/jp.ctte_/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/johnpewpew" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://web.telegram.org/k/#777000" class="social-link" target="_blank"> <i class="fab fa-telegram-plane"></i></a>
+                </div>
+
+            </div>
+
+            <!-- Right Section: Contact Form -->
+            <form id="commentForm" class="form-right animate-on-scroll">
+                <div class="form-group animate-on-scroll">
+                    <label for="details">What’s your comment?</label>
+                    <textarea id="details" name="details" placeholder="Enter your text here...."></textarea>
+                </div>
+
+                <div class="form-group animate-on-scroll">
+                    <button type="submit" class="submit-button">SUBMIT</button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+    <script src="/javascript/portfolio.js"></script>
+    <script src="javascript/animation effect/portf.js"></script>
+    <script src="/javascript/animation effect/service.js"></script>
+    <script src="/javascript/comments.js"></script>
+    <script src="/javascript/animation effect/abot.js"></script>
+    <script src="/javascript/animation effect/contact.js"></script>
+</body>
+
+</html>
